@@ -34,13 +34,29 @@ footer{background:#050a10;color:#aebac5;padding:35px 0}.foot{display:flex;justif
 .gallery-note{text-align:center;color:var(--muted);font-size:14px;margin-top:20px}
 @media(max-width:900px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:600px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+
+.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.support-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;padding:34px;box-shadow:0 12px 34px rgba(8,17,28,.08)}
+.support-card h3{font-size:28px;margin:8px 0 10px}.support-card p{color:var(--muted)}
+.support-card .big-icon{font-size:42px}
+.sponsor-levels{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:28px}
+.level{border:1px solid var(--line);border-radius:8px;padding:18px 12px;text-align:center;background:#fff}
+.level strong{display:block;font-size:18px}.level span{display:block;color:var(--blue);font-weight:900;margin-top:4px}
+.level small{display:block;color:var(--muted);margin-top:8px;line-height:1.35}
+.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.trust{background:#f5f8fb;border-radius:8px;padding:20px;text-align:center}.trust b{display:block;margin-bottom:4px}
+.donate-panel{max-width:850px;margin:auto;text-align:center;background:#fff;color:var(--ink);padding:38px;border-radius:12px;box-shadow:0 16px 45px rgba(0,0,0,.22)}
+.donate-panel p{color:var(--muted)}
+@media(max-width:900px){.sponsor-levels{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:780px){.support-grid,.trust-row{grid-template-columns:1fr}}
+@media(max-width:520px){.sponsor-levels{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="top">IRON HORSE CHARITIES INC. • <b>MISSOURI 501(c)(3) NONPROFIT</b> • INCORPORATED MARCH 9, 2026</div>
 <header><div class="wrap nav">
 <a class="brand" href="#home"><span class="mark">⚒</span><span>IRON HORSE<small>CHARITIES INC.</small></span></a>
-<nav><a href="#about">About</a><a href="#causes">Causes</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#donate">Donate</a><a href="#contact">Contact</a></nav>
+<nav><a href="#about">About</a><a href="#causes">Causes</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#sponsor">Sponsor</a><a href="#donate">Donate</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main>
@@ -48,7 +64,7 @@ footer{background:#050a10;color:#aebac5;padding:35px 0}.foot{display:flex;justif
 <div class="eyebrow">Serving veterans • children • communities</div>
 <h1>RIDING FOR A<br>GREATER CAUSE.</h1>
 <p>Iron Horse Charities Inc. brings people together to support veterans, children, and communities in need through charitable assistance, volunteer service, fundraising events, and community partnerships.</p>
-<div class="buttons"><a class="btn primary" href="#donate">Support Our Mission</a><a class="btn outline" href="#about">Learn About Us</a></div>
+<div class="buttons"><a class="btn primary" href="#donate">Donate Now</a><a class="btn outline" href="#sponsor">Become a Sponsor</a></div>
 <div class="hero-art"><img src="assets/iron-horse-charities-logo.jpg" alt="Iron Horse Charities Inc. — supporting veterans, children and communities in need"></div>
 </div></section>
 
@@ -73,10 +89,60 @@ footer{background:#050a10;color:#aebac5;padding:35px 0}.foot{display:flex;justif
 </div>
 </div></section>
 
-<section class="cta" id="donate"><div class="wrap"><div class="head"><div class="eyebrow">MAKE A DIFFERENCE</div><h2>Help us keep giving back.</h2><p>Support veterans, children, and communities in need. One-time gifts, sponsorships, event sponsorships, and in-kind donations help fund our charitable work. Online donations can be made securely through PayPal.</p>
-<div class="buttons" style="justify-content:center"><a class="btn primary" href="https://www.paypal.com/ncp/payment/D6MBGS86GAFCW" target="_blank" rel="noopener">Donate Securely with PayPal</a><a class="btn outline" href="#contact">Contact Us</a></div></div></div></section>
 
-<section id="contact"><div class="wrap"><div class="head"><div class="eyebrow">CONTACT</div><h2>Let's work together.</h2><p>For sponsorships, donations, volunteering, event information, or community partnerships, reach out to Iron Horse Charities Inc.</p></div>
+<section id="sponsor">
+<div class="wrap">
+  <div class="head">
+    <div class="eyebrow">BECOME A SPONSOR</div>
+    <h2>Partner with Iron Horse Charities.</h2>
+    <p>Local businesses, organizations, and individuals can help us expand the impact of our charitable events and community outreach. Sponsorship also gives us an opportunity to recognize those who stand behind our mission.</p>
+  </div>
+
+  <div class="support-grid">
+    <div class="support-card">
+      <div class="big-icon">🤝</div>
+      <h3>Corporate & Community Sponsorships</h3>
+      <p>Sponsorships can support the organization as a whole or a specific benefit, ride, fundraiser, or community project. Recognition may include website and social media recognition, event signage, banners, certificates, and logo placement where appropriate.</p>
+      <a class="btn primary" href="mailto:ironhorsecharity@gmail.com?subject=Iron%20Horse%20Charities%20Sponsorship%20Inquiry">Become a Sponsor</a>
+    </div>
+    <div class="support-card">
+      <div class="big-icon">🏍️</div>
+      <h3>Event Sponsorships</h3>
+      <p>Help underwrite an upcoming ride, benefit, fundraiser, or outreach project. Event sponsorships help offset event costs so more resources can be directed toward the charitable purpose of the event.</p>
+      <a class="btn primary" href="mailto:ironhorsecharity@gmail.com?subject=Event%20Sponsorship%20Inquiry">Sponsor an Event</a>
+    </div>
+  </div>
+
+  <div class="sponsor-levels">
+    <div class="level"><strong>Bronze</strong><span>$250</span><small>Website & social media recognition</small></div>
+    <div class="level"><strong>Silver</strong><span>$500</span><small>Bronze recognition + event signage</small></div>
+    <div class="level"><strong>Gold</strong><span>$1,000</span><small>Silver recognition + banner/logo placement</small></div>
+    <div class="level"><strong>Platinum</strong><span>$2,500</span><small>Gold recognition + premier recognition</small></div>
+    <div class="level"><strong>Title Sponsor</strong><span>$5,000+</span><small>Primary recognition for a selected event</small></div>
+  </div>
+</div>
+</section>
+
+<section class="cta" id="donate">
+<div class="wrap">
+  <div class="donate-panel">
+    <div class="eyebrow">DONATE</div>
+    <h2 style="color:#111923;margin:8px 0 14px">Put your support to work.</h2>
+    <p>Your gift helps Iron Horse Charities Inc. support veterans, children, families, and communities through charitable assistance, benefit events, outreach, and community partnerships.</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn primary" href="https://www.paypal.com/ncp/payment/D6MBGS86GAFCW" target="_blank" rel="noopener">Donate Securely with PayPal</a>
+      <a class="btn" style="border-color:#1261b2;color:#1261b2" href="mailto:ironhorsecharity@gmail.com?subject=Donation%20Question">Ask About Giving</a>
+    </div>
+    <div class="trust-row">
+      <div class="trust"><b>501(c)(3) Nonprofit</b><span>Charitable organization serving Missouri communities.</span></div>
+      <div class="trust"><b>Community Focused</b><span>Veterans, children, families, and local needs are at the heart of our mission.</span></div>
+      <div class="trust"><b>Secure Online Giving</b><span>Online donations are processed through PayPal.</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact"><div class="wrap"><div class="head"><div class="eyebrow">CONTACT</div><h2>Let's work together.</h2><p>For sponsorships, donations, event information, or community partnerships, reach out to Iron Horse Charities Inc.</p></div>
 <div class="contact">
 <div class="panel"><h3>Iron Horse Charities Inc.</h3><p><strong>Address:</strong> 10 SW 11th Rd Trlr 113<br>Warrensburg, MO 64093</p><p><strong>County:</strong> Johnson County, Missouri</p><p><strong>Email:</strong> <a href="mailto:ironhorsecharity@gmail.com">ironhorsecharity@gmail.com</a></p></div>
 <div class="panel"><h3>Connect With Us</h3><p>Follow Iron Horse Charities Inc. on Facebook for current announcements, event updates, photos, fundraising news, and ways to get involved.</p><a class="btn primary" href="https://www.facebook.com/profile.php?id=61590263631651" target="_blank" rel="noopener">Visit Us on Facebook</a></div>
