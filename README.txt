@@ -22,4 +22,3 @@ Donation:
 https://www.paypal.com/ncp/payment/D6MBGS86GAFCW
 
 Gallery updated with 11 additional user-supplied images.
-Website deployment refresh
